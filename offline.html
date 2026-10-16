@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>オフラインです</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+            background: #f7f7f7;
+            /* ★普通の薄いグレー背景（Apple風） */
+            text-align: center;
+            color: #333;
+        }
+
+        .card {
+            background: #ffffff;
+            /* ★普通の白背景 */
+            padding: 28px;
+            border-radius: 16px;
+            max-width: 360px;
+            margin: 0 auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            /* Apple風の柔らかい影 */
+        }
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .text {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .btn {
+            margin-top: 24px;
+            display: inline-block;
+            padding: 14px 26px;
+            /* iOSらしく少し広め */
+            background: #ff9500;
+            /* Apple風オレンジ */
+            color: #fff;
+            border-radius: 14px;
+            /* ★ iOS風の角丸 */
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1.05rem;
+            /* 少し大きくして読みやすく */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            /* iOS風の薄い影 */
+            transition: transform 0.1s ease, opacity 0.2s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+            /* iOSの押し込みアニメーション */
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="title">オフラインです</div>
+        <div class="text">
+            現在ネットワークに接続されていません。<br>
+            接続を確認して、再度アクセスしてください。
+        </div>
+
+        <a href="/index.html" class="btn">トップページ</a>
+    </div>
+
+</body>
+
+</html>

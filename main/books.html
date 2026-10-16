@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡単なメモ</title>
+    <link rel="stylesheet" href="../css/books.css">
+</head>
+<body>
+    <main class="books-page">
+
+    <h1 class="books-title">Book Memo</h1>
+
+    <div class="books-form">
+
+        <!-- タイトル -->
+        <label>タイトル</label>
+        <input type="text" id="book-title" placeholder="タイトルを入力">
+
+        <!-- 著者 -->
+        <label>著者</label>
+        <input type="text" id="book-author" placeholder="著者名">
+
+        <!-- 出版社 -->
+        <label>出版社</label>
+        <input type="text" id="book-publisher" placeholder="出版社">
+
+        <!-- 金額 -->
+        <label>金額</label>
+        <input type="number" id="book-price" placeholder="例：1500">
+
+        <!-- ジャンル -->
+        <label>ジャンル</label>
+        <select id="book-genre">
+            <option value="">選択してください</option>
+            <option value="詩集">詩集</option>
+            <option value="小説">小説</option>
+            <option value="評論">評論</option>
+            <option value="歴史">歴史</option>
+            <option value="紀行">紀行</option>
+            <optin value="漫画">漫画</optin>
+            <option value="その他">その他</option>
+        </select>
+
+        <!-- 種類 -->
+        <label>種類</label>
+        <select id="book-type">
+            <option value="">選択してください</option>
+            <option value="単行本">単行本</option>
+            <option value="文庫">文庫</option>
+            <option value="新書">新書</option>
+            <option value="専門書">専門書</option>
+            <option value="電子書籍">電子書籍</option>
+        </select>
+
+        <!-- メモ -->
+        <label>メモ</label>
+        <textarea id="book-memo" placeholder="気になった理由やメモを入力"></textarea>
+
+        <!-- ボタン群 -->
+        <div class="books-buttons">
+            <button id="book-save" class="btn-save">保存</button>
+            <button id="book-back" class="btn-back">トップページ</button>
+        </div>
+
+    </div>
+
+</main>
+<script src="/move/books.js"></script>
+</body>
+</html>

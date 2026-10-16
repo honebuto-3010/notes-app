@@ -1,0 +1,126 @@
+@charset "utf-8";
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* トップページ用背景（緑の方眼ノート） */
+.home {
+    height: 100dvh;
+    padding-bottom: 3.5rem;
+    background-color: #F4FFF4; /* ごく薄いグリーンベース */
+
+    background-image:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(120, 180, 140, 0.35) 0px,
+            rgba(120, 180, 140, 0.35) 1px,
+            transparent 1px,
+            transparent 24px
+        ),
+        repeating-linear-gradient(
+            to right,
+            rgba(120, 180, 140, 0.35) 0px,
+            rgba(120, 180, 140, 0.35) 1px,
+            transparent 1px,
+            transparent 24px
+        );
+}
+
+/* タイトル（My Notes） */
+.home-title {
+    text-align: center;
+    margin-top: 3.5rem;        /* 余白を多めにして静けさを出す */
+    font-size: 2.2rem;         /* 大きすぎず上品 */
+    font-weight: 300;          /* Apple風の細めフォント */
+    letter-spacing: 1.5px;     /* 少し広めで余白感を演出 */
+    color: #6F8F6F;            /* 緑背景と相性の良い“深いグリーンブラウン” */
+    font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
+}
+
+/* 下ナビゲーションバー全体 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-evenly; /* 4つを均等配置 */
+    padding: 0.9rem 0;
+
+    background: #ffffff;
+    border-top: 1px solid #D8C7B3;
+}
+
+/* 各ナビアイテム（縦並び） */
+.nav-item {
+    display: flex;
+    flex-direction: column; /* アイコン → テキストの縦並び */
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* タイトルと合わせた深いグリーン */
+    font-size: 0.8rem;
+}
+
+.nav-item span {
+    font-family: "YuMincho", serif;
+    font-size: 12px;
+}
+/* アイコン */
+.nav-icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+}
+
+/* ホバー時（少し薄く） */
+.nav-item:hover {
+    opacity: 0.6;
+}
+
+.nav-item.active {
+    color: #4F6F4F;
+    opacity: 1;
+}
+
+@media (max-width: 480px) {
+    .home-title {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 1.2px;
+    }
+        .bottom-nav {
+        padding: 0.8rem 0;
+    }
+
+    .nav-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .nav-item {
+        font-size: 0.75rem;
+    }
+       .home {
+        padding-bottom: 4.5rem; /* bottom-navぶんの余白を確保 */
+    }
+}

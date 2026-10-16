@@ -1,0 +1,96 @@
+@charset "utf-8";
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ページ全体 */
+.books-detail-page {
+    padding: 1.2rem;
+}
+
+/* タイトル */
+.books-detail-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+/* 詳細カード */
+.books-detail-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* 各項目 */
+.detail-item label {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.detail-value {
+    font-size: 1rem;
+    color: #333;
+    background: #fafafa;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+/* メモ欄は広めに */
+.detail-memo {
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+/* 戻るボタン */
+.detail-back-btn {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.8rem 0;
+    background: #34C759;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.detail-back-btn:active {
+    background: #30D158;
+}
+
+/* 削除ボタン（赤） */
+.detail-delete-btn {
+    width: 100%;
+    margin-top: 1.2rem;
+    padding: 0.8rem 0;
+    background: #ff3b30;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.detail-delete-btn:active {
+    background: #d93025;
+}

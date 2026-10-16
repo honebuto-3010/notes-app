@@ -1,0 +1,122 @@
+@charset "utf-8";
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ページ全体 */
+.view-page {
+    padding: 1rem;
+}
+
+/* タイトル */
+.view-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.view-back-btn {
+    width: 100%;
+    padding: 0.65rem 0;
+    margin-top: 1.6rem;
+    background: #34C759; /* Apple風グリーン */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.view-back-btn:active {
+    background: #30D158;
+}
+
+
+/* グリッド本体（3列） */
+.memo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* アイコン1つ分の箱 */
+.memo-item {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 正方形にする */
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+/* 押したときの軽いアニメーション */
+.memo-item:active {
+    transform: scale(0.95);
+}
+
+/* アイコン画像 */
+.memo-item img {
+    width: 70px;
+    height: 70px;
+    opacity: 0.85;
+}
+
+.memo-date {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 0.4rem;
+    font-family: "Noto Serif JP", serif;
+}
+
+/* -------------------------------------- */
+/* 📱 スマホ最適化（ここが追加部分） */
+/* -------------------------------------- */
+@media (max-width: 480px) {
+
+    .view-page {
+        padding: 0.8rem;
+    }
+
+    .view-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .view-back-btn {
+        padding: 0.75rem 0;
+        font-size: 0.85rem;
+        margin-top: 1.2rem;
+    }
+
+    /* グリッドを 2列に変更（スマホで押しやすくする） */
+    .memo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    /* アイコンを少し小さくして画面に収める */
+    .memo-item img {
+        width: 60px;
+        height: 60px;
+    }
+}

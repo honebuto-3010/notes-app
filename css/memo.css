@@ -1,0 +1,141 @@
+@charset "utf-8";
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul,
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ページ全体の余白 */
+.memo-page {
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* カード本体 */
+.memo-card {
+    width: 100%;
+    max-width: 680px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.6rem 1.8rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* タイトル */
+.memo-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+/* 日付 */
+.memo-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* 書き込み欄 */
+.memo-input {
+    width: 100%;
+    height: 260px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: none;
+    box-sizing: border-box;
+    outline: none;
+    background: #fafafa;
+}
+
+/* ボタン群 */
+.memo-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.4rem;
+}
+
+/* ボタン共通 */
+.memo-buttons button {
+    flex: 1;
+    padding: 0.8rem 0;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 10px;
+    background: #e8e8e8;
+    color: #333;
+    cursor: pointer;
+}
+
+#memo-back {
+    background: #34C759;   /* Apple純正グリーン */
+    color: white;
+}
+#memo-back:active {
+    background: #30D158;   /* 押した時の柔らかい緑 */
+}
+
+#memo-save {
+    background: #4a90e2;   /* iOS系ブルー */
+    color: white;
+}
+#memo-save:active {
+    background: #357ab8;   /* 押した時の濃い青 */
+}
+
+/* ボタン：押したとき */
+.memo-buttons button:active {
+    background: #d0d0d0;
+}
+
+
+/* -------------------------------------- */
+/* 📱 スマホ最適化（ここが追加部分） */
+/* -------------------------------------- */
+@media (max-width: 480px) {
+
+    .memo-page {
+        padding: 1rem;
+    }
+
+    .memo-card {
+        padding: 1.2rem 1.4rem;
+        border-radius: 12px;
+    }
+
+    .memo-title {
+        font-size: 1.25rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .memo-date {
+        font-size: 0.85rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .memo-input {
+        height: 220px;          /* スマホでちょうど良い高さ */
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+
+    .memo-buttons button {
+        padding: 0.75rem 0;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡単なメモ</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <main class="detail-page">
+
+    <!-- カード型UI -->
+    <section class="detail-card">
+
+        <!-- タイトル -->
+        <h1 class="detail-title">Memo Detail</h1>
+
+        <!-- 日付 -->
+        <div class="detail-date">
+            <span id="detail-date-text"></span>
+        </div>
+
+        <!-- メモ内容（閲覧専用） -->
+        <div class="detail-content" id="detail-content"></div>
+
+        <!-- ボタン群 -->
+        <div class="detail-buttons">
+            <button id="detail-back-list">一覧</button>
+            <button id="detail-delete">削除</button>
+            <button id="detail-back">トップページ</button>
+        </div>
+
+    </section>
+
+</main>
+<script src="/move/detail.js"></script>
+</body>
+</html>

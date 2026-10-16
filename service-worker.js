@@ -1,40 +1,40 @@
 const CACHE_NAME = "My Notes-cache-v1";
 
 const urlsToCache = [
-  "/",
-  "/index.html",
-  "/offline.html",
+  "",
+  "index.html",
+  "offline.html",
 
   // HTML
-  "/main/books.html",
-  "/main/books_shelf.html",
-  "/main/books_detail.html",
-  "/main/memo.html",
-  "/main/view.html",
-  "/main/view_detail.html",
+  "main/books.html",
+  "main/books_shelf.html",
+  "main/books_detail.html",
+  "main/memo.html",
+  "main/view.html",
+  "main/view_detail.html",
 
   // CSS
-  "/css/style.css",
-  "/css/books.css",
-  "/css/books_shelf.css",
-  "/css/books_detail.css",
-  "/css/memo.css",
-  "/css/view.css",
-  "/css/detail.css",
+  "css/style.css",
+  "css/books.css",
+  "css/books_shelf.css",
+  "css/books_detail.css",
+  "css/memo.css",
+  "css/view.css",
+  "css/detail.css",
 
   // JS
-  "/move/script.js",
-  "/move/books.js",
-  "/move/books_shelf.js",
-  "/move/books_detail.js",
-  "/move/memo.js",
-  "/move/view.js",
-  "/move/detail.js",
+  "move/script.js",
+  "move/books.js",
+  "move/books_shelf.js",
+  "move/books_detail.js",
+  "move/memo.js",
+  "move/view.js",
+  "move/detail.js",
 
   // Icons
-  "/images/icon-192.png",
-  "/images/icon-512.png",
-  "/images/icon-180.png"
+  "images/icon-192.png",
+  "images/icon-512.png",
+  "images/icon-180.png"
 ];
 
 // インストール（キャッシュ作成）

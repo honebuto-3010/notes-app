@@ -19,6 +19,7 @@ a {
 html, body {
     height: auto;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /* トップページ用背景（緑の方眼ノート） */
@@ -76,7 +77,7 @@ body {
     line-height: 1.8;
     font-size: 1.1rem;
     width: 100%;
-    work-break: break-word;
+    word-break: break-word;
 }
 /* 下ナビゲーションバー全体 */
 .bottom-nav {

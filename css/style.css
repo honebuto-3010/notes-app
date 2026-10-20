@@ -94,6 +94,7 @@ body {
     border-top: 1px solid #D8C7B3;
     width: 100%;
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* 各ナビアイテム（縦並び） */

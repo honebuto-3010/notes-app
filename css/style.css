@@ -44,6 +44,7 @@ body {
         );
      overflow-y: auto;    /* ← スクロール許可 */
     padding-bottom: 4.5rem; /* 下ナビに隠れないよう余白 */
+    overflow-x: hidden;
 }
 
 /* タイトル（My Notes） */

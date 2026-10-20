@@ -24,7 +24,6 @@ html, body {
 /* トップページ用背景（緑の方眼ノート） */
 body {
     height: auto;
-    padding-bottom: 3.5rem;
     background-color: #F4FFF4; /* ごく薄いグリーンベース */
 
     background-image:
@@ -76,6 +75,8 @@ body {
     max-width: 480px; /* 中央にまとまる幅 */
     line-height: 1.8;
     font-size: 1.1rem;
+    width: 100%;
+    work-break: break-word;
 }
 /* 下ナビゲーションバー全体 */
 .bottom-nav {
@@ -90,6 +91,8 @@ body {
 
     background: #ffffff;
     border-top: 1px solid #D8C7B3;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* 各ナビアイテム（縦並び） */

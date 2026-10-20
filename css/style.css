@@ -17,12 +17,12 @@ a {
 }
 
 html, body {
-    height: 100%;
-    overflow: hidden;
+    height: auto;
+    overflow: auto;
 }
 
 /* トップページ用背景（緑の方眼ノート） */
-.home {
+body {
     height: 100dvh;
     padding-bottom: 3.5rem;
     background-color: #F4FFF4; /* ごく薄いグリーンベース */
@@ -55,6 +55,25 @@ html, body {
     font-family: "Helvetica Neue", "Yu Gothic", sans-serif;
 }
 
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 全体を中央に配置 */
+    width: 100%;
+    margin-top: 40px;
+}
+
+.sub-title {
+    text-align: center; /* タイトルは中央揃え */
+    margin-bottom: 20px;
+}
+
+.about-text {
+    text-align: left; /* 行頭を左揃え */
+    max-width: 480px; /* 中央にまとまる幅 */
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
 /* 下ナビゲーションバー全体 */
 .bottom-nav {
     position: fixed;
@@ -122,5 +141,15 @@ html, body {
     }
        .home {
         padding-bottom: 4.5rem; /* bottom-navぶんの余白を確保 */
+    }
+
+           .sub-title {
+        font-size: 1.3rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding: 0 10px; /* 画面端にくっつかないように余白 */
     }
 }

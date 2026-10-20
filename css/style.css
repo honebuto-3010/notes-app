@@ -19,6 +19,7 @@ a {
 html, body {
     height: auto;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /* トップページ用背景（緑の方眼ノート） */
